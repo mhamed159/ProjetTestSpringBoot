@@ -1,7 +1,7 @@
-package controllers;
+package com.mhamedbaguenne.projetSpringBoot.controllers;
 
-import com.mhamedbaguenne.projetSpringBoot.model.Employee;
-import com.mhamedbaguenne.projetSpringBoot.model.UserRepository;
+import com.mhamedbaguenne.projetSpringBoot.models.Employee;
+import com.mhamedbaguenne.projetSpringBoot.repositories.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ import java.util.List;
 public class EmployeeController {
 
     @Autowired
-    private UserRepository userRepository;
+    private EmployeeRepository userRepository;
 
     /**
      * Get all users list.

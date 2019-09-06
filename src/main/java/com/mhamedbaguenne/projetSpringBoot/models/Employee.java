@@ -1,4 +1,4 @@
-package com.mhamedbaguenne.projetSpringBoot.model;
+package com.mhamedbaguenne.projetSpringBoot.models;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -12,7 +12,7 @@ public class Employee implements Serializable {
     private String prenom;
     private String nom;
     private String adresse;
-    private String numéro;
+    private String numero;
 
     public Employee() {
 
@@ -23,7 +23,7 @@ public class Employee implements Serializable {
         this.prenom = prenom;
         this.nom = nom;
         this.adresse = adresse;
-        this.numéro = numero;
+        this.numero = numero;
     }
 
     public String getPrenom() {
@@ -43,11 +43,11 @@ public class Employee implements Serializable {
     }
 
     public String getNuméro() {
-        return numéro;
+        return numero;
     }
 
     public void setNuméro(String numéro) {
-        this.numéro = numéro;
+        this.numero = numéro;
     }
 
     public long getId() {
