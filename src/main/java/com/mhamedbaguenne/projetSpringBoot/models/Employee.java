@@ -1,6 +1,7 @@
 package com.mhamedbaguenne.projetSpringBoot.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity(name="employee")
@@ -9,6 +10,7 @@ public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
+    @NotNull
     private String prenom;
     private String nom;
     private String adresse;
