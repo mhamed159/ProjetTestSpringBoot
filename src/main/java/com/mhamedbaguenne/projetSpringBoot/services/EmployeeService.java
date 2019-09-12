@@ -1,7 +1,8 @@
-package com.mhamedbaguenne.projetSpringBoot.repositories;
+package com.mhamedbaguenne.projetSpringBoot.services;
 
 
 import com.mhamedbaguenne.projetSpringBoot.models.Employee;
+import com.mhamedbaguenne.projetSpringBoot.repositories.EmployeeRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Collections;
